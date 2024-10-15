@@ -13,7 +13,7 @@ contract RegistroPessoas {
     }
     
     address public administrador;
- // NAO SEI FAZER... Busca o valor?
+ // ???
     mapping(string => Pessoa) private registrosPorCpf; 
 
     string[] private listaCpfs; 
@@ -30,14 +30,14 @@ contract RegistroPessoas {
         administrador = msg.sender; 
     }
 
-// NAO SEI FAZER ... Função de validação de dados
+// ???
     function validarDados(
         string memory _cpf,
         uint256 _idade
     ) private pure { 
         require(bytes(_cpf).length == 11, "CPF deve ter 11 caracteres"); // NAO SEI FAZER ... Adicionado: Validação de CPF e Idade
 
-// NAO SEI FAZER ... Verifica se o CPF contém apenas números
+// ???
         for (uint256 i = 0; i < bytes(_cpf).length; i++) {
             require(bytes(_cpf)[i] >= 0x30 && bytes(_cpf)[i] <= 0x39, "CPF deve conter apenas numeros");
         }
@@ -54,7 +54,7 @@ function registrarPessoa(
     string memory _cep,
     string memory _email
     ) public {
-        validarDados(_cpf, _idade); // NAO SEI FAZER ... Adicionado: Chama a função de validação
+        validarDados(_cpf, _idade); //???
 
         require(bytes(registrosPorCpf[_cpf].nome).length == 0, "CPF ja registrado");
 
