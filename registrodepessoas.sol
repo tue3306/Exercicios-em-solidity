@@ -33,7 +33,7 @@ contract RegistroPessoas {
         string memory _cpf,
         uint256 _idade
     ) private pure { 
-        require(bytes(_cpf).length == 11, "CPF deve ter 11 caracteres"); // NAO SEI FAZER ... Adicionado: Validação de CPF e Idade
+        require(bytes(_cpf).length == 11, "CPF deve ter 11 caracteres"); 
 
         for (uint256 i = 0; i < bytes(_cpf).length; i++) {
             require(bytes(_cpf)[i] >= 0x30 && bytes(_cpf)[i] <= 0x39, "CPF deve conter apenas numeros");
