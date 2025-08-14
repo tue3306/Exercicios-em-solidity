@@ -44,10 +44,3 @@ Consolidar o aprendizado em desenvolvimento de **Smart Contracts** na plataforma
 5. Interaja com as funções do contrato pela interface do Remix.
 
 ---
-
-## 📌 Observações
-- Todos os exemplos foram desenvolvidos com propósitos **educacionais**.
-- Antes de implantar em uma rede principal (**mainnet**), é necessário revisar e auditar o código.
-- É recomendável utilizar **testnets** para realizar testes seguros.
-
----
